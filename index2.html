@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h1 class="header_text">Yesss..!!! Finally </h1> 
+      </div>
+      <div class="gif_container">
+        <img
+          src="./cony-and-brown.gif"
+          alt="Cute animated illustration"
+        />
+      </div>
+      <button class="btn" id="yesButton" onclick="nextPage()">
+        <a href="https://instagram.com/anjalikhatri_13?igshid=OGQ5ZDc2ODk2ZA==">Let's Fix a Date</a>
+      </button>
+    </div>
+  </body>
+  <style>
+
+.heart {
+  position: absolute;
+  animation: float 1-3s ease-in-out infinite;
+  transform: rotateY(0deg);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to bottom, rgba(255, 174, 206, 0.8) 0%, rgba(216, 191, 255, 0.8) 100%);
+  border-radius: 50%;
+  width: 2%;
+  height: 2%;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10%) scale(1.1); }
+  100% { transform: translateY(0); }
+}
+
+.heart:nth-child(2) {
+  animation: float 0.5-1s ease-in-out infinite;
+}
+
+.heart:nth-child(3) {
+  animation: float 2-3s ease-in-out infinite;
+}
+
+/* Add more child selector rules for additional hearts with different animation delays */
+
+.heart:nth-child(odd) {
+  transform: rotateY(180deg);
+}
+  </style>
+</html>
